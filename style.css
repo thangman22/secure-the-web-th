@@ -1,11 +1,15 @@
 h1,h2,h3,h4,h5{
   color: #35373f !important;
 }
+a{color: #35373f !important;}
 p{
   color: #757575 !important;
 }
-.blog-area > img{
+.blog-area > div > img{
   height: 183px;
+}
+.partner-area > img{
+  width: 100%;
 }
 h5{padding-top:5px;padding-left:0;padding-bottom:0;}
 .by-text{
