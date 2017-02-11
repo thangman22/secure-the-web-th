@@ -1,15 +1,22 @@
 h1,h2,h3,h4,h5{
   color: #35373f !important;
 }
-a{color: #35373f !important;}
+.blog-area > h5 > a{color: #35373f !important;}
+.btn-success{
+  background-color: #3b8143 !important;
+  border-color: #3b8143 !important;
+}
 p{
   color: #757575 !important;
 }
 .blog-area > div > img{
   height: 183px;
 }
-.partner-area > img{
-  width: 100%;
+.partner-area{
+  margin-bottom: 20px;
+}
+.partner-area-image{
+  width: 350px;
 }
 h5{padding-top:5px;padding-left:0;padding-bottom:0;}
 .by-text{
@@ -30,6 +37,7 @@ h5{padding-top:5px;padding-left:0;padding-bottom:0;}
   margin-top: 64px;
   height: 368px;
   background: url('img/bg.png') !important;
+  border-radius: 0px !important;
 }
 .text-badge{
   background: rgba(255, 255, 255, 0.85);
