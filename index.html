@@ -63,6 +63,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center mb-5">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RoJFnmqAJtk?showinfo=0" frameborder="0" allowfullscreen></iframe>
         <h3 class="m-3 header">ความตั้งใจของ Secure The Web Thailand</h3>
         <p>แวดวงการพัฒนาเว็บไซต์ในต่างประเทศกำลังตื่นตัวและให้ความสำคัญกับความปลอดภัยของการรักษาข้อมูล จึงได้มีการผลักดันให้มีการติดตั้ง SSLในทุกๆเว็บไซต์  แรงผลักดันเหล่านี้ถูกขับเคลื่อนโดยกลุ่มผู้พัฒนา Browser เจ้าหลักๆในโลก (เช่น Google Chrome)ได้เริ่มทำการปิดกั้นการเข้าถึงคุณสมบัติใหม่ๆ จากเว็บไซต์ที่ไม่ได้มีการติดตั้ง SSL และเพื่อเป็นการสนับสนุนให้เว็บไซต์ในประเทศไทยใส่ใจในความปลอดภัยในข้อมูลของผู้ใช้มากขึ้น พวกเรา "Secure The Web Thailand" ขอเป็นตัวแทนในการผลักดันและขับเคลื่อนให้การเปลี่ยนผ่านไปสู่ยุค HTTPS เกิดขึ้นในประเทศไทยอย่างจริงจัง จนสามารถสร้างความมั่นใจให้กับผู้ใช้งานได้ว่าข้อมูลต่างๆ จะไม่รั่วไหลไปอยู่ในมือของผู้ไม่ประสงค์</p>
       </div>
@@ -105,22 +106,9 @@
         <h3 class="m-3 header">บทความเกี่ยวกับ HTTPS</h3>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4 blog-area">
-        <div class="text-center"><img src="img/inox-web.jpeg"></div>
-        <h5><a target="_blank" href="https://medium.com/innovative-extremist/%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B9%83%E0%B8%8A%E0%B9%89-ssl-%E0%B8%9A%E0%B8%99%E0%B9%80%E0%B8%A7%E0%B9%87%E0%B8%9A%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B1%E0%B8%9A-20kreq-sec-c7811ad5a323">เปิดใช้ SSL บนเว็บระดับ 20Kreq/sec</a></h5>
-        <p class="by-text">By Inox</p>
-      </div>
-      <div class="col-md-4 blog-area">
-        <div class="text-center"><img src="img/designil-free-https-1050x550.jpg"></div>
-        <h5><a target="_blank" href="https://www.designil.com/free-https-cloudflare.html">สอนวิธีทำ HTTPS ง่าย ๆ ฟรี ๆ ทำให้เว็บไซต์เราโหลดเร็ว ปลอดภัย SEO แรง</a></h5>
-        <p class="by-text">By Designil</p>
-      </div>
-      <div class="col-md-4 blog-area">
-        <div class="text-center"><img src="img/index.jpg"></div>
-        <h5><a  target="_blank" href="https://www.nannstudio.com/free-https-with-lets-encrypt/">เปิดใช้งาน https กับ Let’s Encrypt ให้เว็บไซต์ โดยใช้ DirectAdmin</a></h5>
-        <p class="by-text">By Nannstudio</p>
-      </div>
+    <div class="row" id="blog-rotate">
+    </div>
+     <div class="row">
       <div class="col-md-12 text-center">
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfY6YDHO6McvHulWIkdUc3AqtlXrC6aRmPZXCDADl0wnjFBTA/viewform" class="btn btn-success btn-lg">ร่วมส่งบทความ</a>
       </div>
@@ -159,8 +147,8 @@
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=302629506422573";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<script>
+}(document, 'script', 'facebook-jssdk'));
+
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -168,6 +156,97 @@
 
   ga('create', 'UA-91760359-1', 'auto');
   ga('send', 'pageview');
+
+  let posts = [
+    {
+      img: 'https://securetheweb.in.th/img/inox-web.jpeg',
+      title: 'เปิดใช้ SSL บนเว็บระดับ 20Kreq/sec',
+      url: 'https://medium.com/innovative-extremist/%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B9%83%E0%B8%8A%E0%B9%89-ssl-%E0%B8%9A%E0%B8%99%E0%B9%80%E0%B8%A7%E0%B9%87%E0%B8%9A%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B1%E0%B8%9A-20kreq-sec-c7811ad5a323',
+      author: 'Inox'
+    },
+    {
+      img: 'https://securetheweb.in.th/img/designil-free-https-1050x550.jpg',
+      title: 'สอนวิธีทำ HTTPS ง่าย ๆ ฟรี ๆ ทำให้เว็บไซต์เราโหลดเร็ว ปลอดภัย SEO แรง',
+      url: 'https://www.designil.com/free-https-cloudflare.html',
+      author: 'Designil'
+    },
+    {
+      img: 'https://securetheweb.in.th/img/index.jpg',
+      title: 'เปิดใช้งาน https กับ Let’s Encrypt ให้เว็บไซต์ โดยใช้ DirectAdmin',
+      url: 'https://securetheweb.in.th/img/index.jpg',
+      author: 'Nannstudio'
+    },
+    {
+      img: 'https://padveewebschool.com/wp-content/uploads/2017/02/https-website.jpg',
+      title: 'ทำเว็บให้เป็น HTTPS (แบบฟรี) ด้วย Let’s Encrypt บน DirectAdmin',
+      url: 'https://padveewebschool.com/https-free-lets-encrypt/',
+      author: 'PADVEE'
+    },
+    {
+      img: 'https://srakrn.me/blog/wp-content/uploads/2016/06/by-default-2559-06-07-at-9.46.22-AM-768x268.png',
+      title: 'ความปลอดภัยเบื้องต้น: HTTPS คืออะไร และทำงานอย่างไร',
+      url: 'https://srakrn.me/blog/how-https-works/',
+      author: 'Srakrn'
+    },
+    {
+      img: 'https://cdn-images-1.medium.com/max/800/1*nrlagCS9zmqSsXJluXTinA.jpeg',
+      title: '3 ขั้นตอนง่ายๆ เปิดใช้ HTTPS ด้วย Let’s Encrypt ใน Plesk',
+      url: 'https://medium.com/@spiritstorm/plesk-%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B9%83%E0%B8%8A%E0%B9%89-ssl-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-lets-encrypt-%E0%B9%83%E0%B8%99-3-%E0%B8%8A%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B8%95%E0%B8%AD%E0%B8%99-2e15cf615d40#.itdt52kxm',
+      author: 'Suphalerk Suksaprot'
+    },
+    {
+      img: 'https://blog.lnw.co.th/wp-content/uploads/2017/02/ssl_shop-banner.jpg',
+      title: 'Secure Sockets Layer (SSL) สำคัญยังไงกับร้านค้าออนไลน์',
+      url: 'https://blog.lnw.co.th/2017/02/12/ssl-%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C/',
+      author: 'LnwShop'
+    },
+    {
+      img: 'https://www.techsuii.com/wp-content/uploads/2017/02/Screen-Shot-2560-02-12-at-22.26.49.png',
+      title: 'วิธีการติดตั้ง LEMP ใน Ubuntu 16.04 และการบังคับให้ user ใช้งานแต่ HTTPS เท่านั้น',
+      url: 'https://www.techsuii.com/2017/02/12/how-to-install-lemp-and-set-https/',
+      author: 'Techsuii.com'
+    },
+    {
+      img: 'https://www.techsuii.com/wp-content/uploads/2017/02/Screen-Shot-2560-02-06-at-17.02.16.png',
+      title: 'ทดสอบ TLS/SSL Server ด้วย testssl.sh',
+      url: 'https://www.techsuii.com/2017/02/06/how-to-test-tlsssl-server-with-testssl-sh/',
+      author: 'Techsuii.com'
+    },
+    {
+      img: 'https://rath.asia/wp-content/uploads/2017/02/HTTPS-featured-image-1080x565.jpg',
+      title: 'อธิบายการทำงานของ HTTPS และเทคโนโลยีที่เกี่ยวข้อง (แบบพยายามไม่ให้งง)',
+      url: 'https://rath.asia/2017/02/https-and-related-technology-explained/',
+      author: 'Rath Panyowat'
+    }
+  ];
+
+  for (let post of shuffle(posts).slice(0,6)){
+    $('#blog-rotate').append('<div class="col-md-4 blog-area">' +
+        '<div class="text-center image-blog"><img src="' + post.img +'"></div>' +
+        '<h5><a target="_blank" href="' + post.url +'">' + post.title +'</a></h5>' +
+        '<p class="by-text">' + post.author +'</p>' +
+      '</div>');
+  }
+
+  function shuffle(array) {
+      let counter = array.length;
+
+      // While there are elements in the array
+      while (counter > 0) {
+          // Pick a random index
+          let index = Math.floor(Math.random() * counter);
+
+          // Decrease counter by 1
+          counter--;
+
+          // And swap the last element with it
+          let temp = array[counter];
+          array[counter] = array[index];
+          array[index] = temp;
+      }
+
+      return array;
+  }
 
 </script>
 </body>

@@ -10,6 +10,10 @@ p{
   color: #757575 !important;
 }
 .blog-area > div > img{
+  max-height: 183px;
+  max-width: 328px;
+}
+.image-blog{
   height: 183px;
 }
 .partner-area{
